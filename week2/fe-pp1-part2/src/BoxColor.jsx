@@ -10,7 +10,7 @@ const BoxColor = ({ r, g, b }) => {
         margin: '10px auto',
         textAlign: 'center',
         lineHeight: '100px',
-        fontFamily: 'Arial, sans-serif',
+        fontFamily: 'Arial, Helvetica, sans-serif',
         border: ' solid black',
       }}
     >
