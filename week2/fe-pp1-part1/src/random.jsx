@@ -1,0 +1,10 @@
+const Random = (props) => {
+  const randomNumber =
+    Math.floor(Math.random() * (props.max - props.min + 1)) + props.min
+  return (
+    <div className='random-card'>
+      Random number between {props.min} and {props.max} =&gt; {randomNumber}
+    </div>
+  )
+}
+export default Random

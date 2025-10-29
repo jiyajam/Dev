@@ -1,0 +1,32 @@
+.id-card {
+  display: flex;
+  border: 1px solid hsl(0, 0%, 4%);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  padding: 10px;
+  margin: 10px;
+  width: 400px;
+  text-align: center;
+}
+
+.id-card li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.id-card img {
+  display: flex;
+}
+
+.random-card {
+  display: flex;
+  border: 1px solid hsl(0, 0%, 7%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  padding: 10px;
+  margin: 10px;
+  width: 400px;
+  text-align: center;
+}
