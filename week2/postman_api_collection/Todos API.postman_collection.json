@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "9b51aeb2-f0cb-411b-bb66-52f5fa218a3a",
+		"name": "Todos API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49558951",
+		"_collection_link": "https://jiyajam-1228567.postman.co/workspace/jiya's-Workspace~1ea7549f-e069-47e6-805a-3375bab88a3d/collection/49558951-9b51aeb2-f0cb-411b-bb66-52f5fa218a3a?action=share&source=collection_link&creator=49558951"
+	},
+	"item": [
+		{
+			"name": "Get All Todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"task\": \"Buy groceries\",\n  \"completed\": false,\n  \"dueDate\": \"2025-08-30\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get todo By ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"task\": \"Buy groceries\",\n  \"completed\": false,\n  \"dueDate\": \"2025-08-30\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/todos/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"todos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update todo By ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"task\": \"Buy groceries and cook dinner\",\n  \"completed\": true,\n  \"dueDate\": \"2025-08-31\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/todos/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"todos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete todo By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"task\": \"Buy groceries and cook dinner\",\n  \"completed\": true,\n  \"dueDate\": \"2025-08-31\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/todos/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"todos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
