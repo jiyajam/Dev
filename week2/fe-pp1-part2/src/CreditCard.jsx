@@ -1,5 +1,6 @@
-import visa from '/src/assets/images/visa.png'
-import mastercard from '/src/assets/images/master.png'
+import visa from './assets/images/visa.png'
+import mastercard from './assets/images/master.png'
+
 import './App.css'
 
 const CreditCard = (props) => {

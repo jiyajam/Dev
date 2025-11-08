@@ -72,36 +72,4 @@ const deleteOneById=(id)=> {
   if (pet) {
     const initialLength = petArray.length;
     petArray = petArray.filter((pet) => pet.id != id);
-    return petArray.length < initialLength; // Indicate successful deletion if the length has decreased
-  }
-  return false; // Return false if the item was not found
-}
-
-if (require.main === module) {
-  // Add pet
-  let result = addOne("Buddy", "Dog", 3, "Brown", 20);
-  console.log(result);
-  // Add another pet
-  result = addOne("Mittens", "Cat", 2, "Black", 10);
-  console.log(result);
-
-  console.log("getAll called:", getAll());
-
-  console.log("findById called:", findById(1));
-
-  console.log("updateOne called:", updateOneById(1, { age: 4, weight: 22 }));
-  console.log("findById called after item updated:", findById(1));
-
-  console.log("deleteOneById called:", deleteOneById(1));
-  console.log("findById called after item deleted:", findById(1));
-}
-
-Pet = {
-  getAll,
-  addOne,
-  findById,
-  updateOneById,
-  deleteOneById,
-};
-
-module.exports = Pet;
+    return petArray.length < initialLength; // Indicate successful deletion if the length has d

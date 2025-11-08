@@ -1,4 +1,5 @@
 import CreditCard from './CreditCard'
+import BoxColor from './BoxColor'
 
 function App() {
   return (
