@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "4b7e1ba5-fe93-4c76-9895-c98c8aafedbc",
+		"name": "Blog API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49558951",
+		"_collection_link": "https://jiyajam-1228567.postman.co/workspace/jiya's-Workspace~1ea7549f-e069-47e6-805a-3375bab88a3d/collection/49558951-4b7e1ba5-fe93-4c76-9895-c98c8aafedbc?action=share&source=collection_link&creator=49558951"
+	},
+	"item": [
+		{
+			"name": "Get All Blogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/blogs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"blogs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Blog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Book thief\",\n    \"body\":\"Genre is Fictional and Dystopian\",\n    \"author\": \"Markus Zusak\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/blogs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"blogs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Blog By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/blogs/691442f0faac8df449d57853",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"blogs",
+						"691442f0faac8df449d57853"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Blog By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Book thief\",\n    \"body\":\"Genre is Fictional \",\n    \"author\": \"Markus Zusak\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/blogs/691442f0faac8df449d57853",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"blogs",
+						"691442f0faac8df449d57853"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete blog by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/blogs/691442f0faac8df449d57853",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"blogs",
+						"691442f0faac8df449d57853"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
