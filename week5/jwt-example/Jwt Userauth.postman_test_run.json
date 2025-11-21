@@ -1,0 +1,66 @@
+{
+	"id": "a1adfa34-0639-48d2-abd9-3b77d45de1ae",
+	"name": "Jwt Userauth",
+	"timestamp": "2025-11-19T09:32:52.236Z",
+	"collection_id": "49558951-c0a70a67-64ad-4919-bce5-22437ff5201d",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-11-19T09:32:51.818Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "d522f19a-8379-48e3-8b91-d71e29cbe453",
+			"name": "post User",
+			"url": "http://localhost:3001/api/users",
+			"time": 108,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				108
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8682b720-85fb-480c-a1ba-de35a347a8ba",
+			"name": "get User",
+			"url": "http://localhost:3001/api/protectedroute",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 114,
+	"collection": {
+		"requests": [
+			{
+				"id": "d522f19a-8379-48e3-8b91-d71e29cbe453",
+				"method": "POST"
+			},
+			{
+				"id": "8682b720-85fb-480c-a1ba-de35a347a8ba",
+				"method": "GET"
+			}
+		]
+	}
+}
