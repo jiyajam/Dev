@@ -1,5 +1,5 @@
 import useField from './useField'
-import './App.css' // Add CSS if needed
+import './App.css'
 
 const AppWithCustomHook = () => {
   const nameInput = useField('text')
@@ -8,8 +8,12 @@ const AppWithCustomHook = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    // You can handle form submission logic here
-    console.log(nameInput.value, bornInput.value, heightInput.value)
+    console.log(
+      'Form submitted:',
+      nameInput.value,
+      bornInput.value,
+      heightInput.value
+    )
   }
 
   return (
@@ -26,10 +30,14 @@ const AppWithCustomHook = () => {
         <div>
           Height: <input {...heightInput} />
         </div>
+        <br />
         <button type='submit'>Submit</button>
       </form>
+
       <div>
-        {nameInput.value} {bornInput.value} {heightInput.value}
+        <p>{nameInput.value}</p>
+        <p>{bornInput.value}</p>
+        <p>{heightInput.value}</p>
       </div>
     </div>
   )

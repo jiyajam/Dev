@@ -16,7 +16,7 @@ const App = () => {
 }
 
 export default App
-;/ / / App.jsx
+// ;/ / / App.jsx
 // import SingleCounter from './SingleCounter' // Import the SingleCounter component
 // import './App.css' // Import styles for the app
 
