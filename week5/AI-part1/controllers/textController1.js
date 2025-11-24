@@ -5,6 +5,7 @@ const model = require('../services/gemini')
 //   "prompt": "Suggest 5 creative marketing ideas for a small coffee shop."
 // }
 
+const model = require('../services/gemini')
 const generateText1 = async (req, res) => {
   const { prompt } = req.body || {}
 
